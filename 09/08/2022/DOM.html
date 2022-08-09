@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+        <title>LOGIN PAGE</title>        
+         <link rel="icon" href="D:\img\favicon.jpg">
+</head>
+
+<body>
+
+    <h1 style="color: brown; text-align: center;">
+       K.L.N. College of Engineering
+    </h1>
+    <h2 style="color: blue; text-align: center;">Application Form</h2>
+
+    <form>
+        <div class="wrapper" style=" text-align: center;">
+            Enter your name:
+            <input type="text" id="t1" placeholder="type your name" />
+            <br><br>
+            Enter your Mail-ID:
+            <input type="email" id="t2" placeholder="type your mail id"/>
+            <br><br>
+             Enter your password:
+            <input type="password" id="t3" placeholder="type your password"  />
+            <br><br>
+            Date of Birth:
+            <input type="date" id="date" />
+            <br><br>
+            Select Gender:
+            <input type="radio" id="t4" name="t4" value="Male">
+             <label for="t4">Male</label>
+             <input type="radio" id="t4" name="t4"value="Female">
+             <label for="t4">Female</label><br><br>
+            <label for="dept">Choose a Department:</label>
+            <select name="dept" id="dept">
+                <option value="select">Select</option>
+              <option value="E&I">E&I</option>
+              <option value="CSE">CSE</option>
+              <option value="CIVIL">Civil</option>
+              <option value="MECH">mechanical</option>
+            </select><br><br>
+             <label >Known Languages:</label>
+             <tr>  
+             <td> Java <input type="checkbox" id="check1" name="pl" value="Java"> </td>  
+             <td> PHP<input type="checkbox" id="check2" name="pl" value="PHP"> </td>   
+             </tr> <tr>  
+             <td> Angular<input type="checkbox" id="check3" name="pl" value="Angular"> </td>  
+             <td> CSS <input type="checkbox" id="check4" name="pl" value="CSS"> </td>  
+             </tr> <tr>  
+             <td> Python <input type="checkbox" id="check5" name="pl" value="Python"> </td>  
+             <td> Android <input type="checkbox" id="check6" name="pl" value="Android"> </td>                                                
+            <br><br>
+            <button id="btn" style="background-color: blue; color:white;">Submit</button>           
+               
+        <h4>pls <a id="link" href="https://www.klnce.edu/Default.aspx">Visit Our Website</a>...!</h4>
+        
+        </div>
+    </form>
+    
+    
+    <script>
+           document.getElementById('btn').onclick = function() {
+            var name = document.getElementById("t1").value;
+            var email = document.getElementById("t2").value;
+            var password=document.getElementById("t3").value;
+            var date =document.getElementById("date").value;
+            var gender=document.getElementById("t4").value;
+            var Department=document.getElementById("dept").value;           
+            var markedCheckbox = document.getElementsByName('pl');  
+            for (var checkbox of markedCheckbox) {
+            if (checkbox.checked)  
+             document.write("Selected languages:"+checkbox.value + ', ');                       
+            }
+            document.write("Name:" + name + ",mail id: "+email+ ",password:" + password+",DOB:"+date+",Gender:"+gender+",Department:"+Department);    
+        }  
+ 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>klnce</title>
+  <link rel="icon" href="D:\img\favicon.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+   
+      
+<div class="container">
+    <div class="jumbotron">
+      <h1 style="color:darkgreen; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">K.L.N. College of Engineering</h1>      
+      <p  style="color:blue;">An Autonomous Institution, Approved by AICTE, NewDelhi & Afflicated to Anna University,Chennai</p>
+    </div>  
+  </div>
+  
+<div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Highlight News!</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Department
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ComputerScience</a></li>
+            <li><a href="#">Electronics & Instrumentation</a></li>
+            <li><a href="#">Mechanical Engineering</a></li>
+            <li><a href="#">Information Technology</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3 style="text-decoration: underline; color: cadetblue; ">Quality Policy:</h3>
+      <p> Our college is committed to provide Quality Engineering, Technology and Management Education by ensuring global standard and resources through continual quality management system for the development of students.</p>
+      
+    </div>
+    <div class="col-sm-2">
+      <h3 style="text-decoration: underline; color: blueviolet;">Vision:</h3>
+      <p>To become a Centre of Excellence in Technical Education and Research in producing Competent and Ethical professionals to the society</p>
+
+    </div>
+    <div class="col-sm-2">
+        <form >
+            <div class="form-group">
+              <label>Login ID:</label>
+              <input type="number" class="form-control" id="rollno" placeholder="Type your Rollno">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Type your password">
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+          </form>
+  </div>
+  <div class="col-sm-2">
+    <h6 style="text-decoration: underline; color: crimson;">Lab Facility photos</h6>
+    <img src="C:\Users\ELCOT\Desktop\html-novastrid\landing template\image\img2.jpg" alt="" style="height: 50%; width:100%;">
+        
+  </div>
+  <div class="col-sm-2">
+    <h5 style="text-decoration: underline; color:red;">Head News!</h5>
+    <iframe src="https://www.thehindu.com/" height="200" width="270" title="Iframe Example"></iframe>
+  </div>
+</div>
+<footer>
+<div class="footer">            
+    <ul class="pager">
+      <li class="previous"><a href="#">Previous</a></li>
+      
+      <div class="icons">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>    
+      <li class="next"><a href="#">Next</a></li>
+    </ul></div>
+  </div>
+</footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script>
+    document.getElementById('btn').onclick = function() {
+     var rollno = document.getElementById("rollno").value;
+         var password=document.getElementById("pwd").value;     
+     document.write("Roll.no:" + rollno +",password:" + password);    
+ }  
+
+</script>
+</body>
+</html>

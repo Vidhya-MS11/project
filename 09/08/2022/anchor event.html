@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Events=-Anchor</title>
+    <link rel="icon" href="D:\img\favicon.jpg">
+</head>
+<body>
+    <h3>Pls click the button..</h3>
+    <a id="link" href="https://www.klnce.edu/Default.aspx"></a>
+    <div>
+    <button id="submit">Click</button>
+    </div>
+    <script>  
+    document.getElementById('submit').onclick = function() {
+    document.getElementById('link').click();
+}
+   </script>
+</body>
+</html>

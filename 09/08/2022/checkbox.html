@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+<h4> Select the programming language:</h4>  
+<tr>  
+<td> Java<input type="checkbox" id="check1" name="s1" value="Java"> </td>  
+<td> PHP<input type="checkbox" id="check2" name="s1" value="PHP"> </td>   
+</tr> <tr>  
+<td> Angular<input type="checkbox" id="check3" name="s1" value="Angular"> </td>  
+<td> CSS<input type="checkbox" id="check4" name="s1" value="CSS"> </td>  
+</tr> <tr>  
+<td> Python<input type="checkbox" id="check5" name="s1" value="Python"> </td>  
+<td> Android<input type="checkbox" id="check6" name="s1" value="Android"> </td> <br> <br>  
+<button id="btn">Submit</button> <br>    
+  
+<script>  
+document.getElementById('btn').onclick = function() {  
+  var markedCheckbox = document.getElementsByName('s1');  
+  for (var checkbox of markedCheckbox) {  
+    if (checkbox.checked)  
+      document.write(checkbox.value + ' ,');  
+  }  
+}  
+</script>  
+  
+</body>  
+</html>

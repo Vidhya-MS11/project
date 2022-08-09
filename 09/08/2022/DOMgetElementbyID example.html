@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+        <title>LOGIN PAGE</title>        
+         <link rel="icon" href="D:\img\favicon.jpg">
+</head>
+
+<body>
+
+    <h1 style="color: brown; text-align: center;">
+       K.L.N. College of Engineering
+    </h1>
+
+    <form>
+        <div class="wrapper" style="text-align: center;">
+            Enter your name:
+            <input type="text" id="t1" />
+            <br><br>
+            Enter your Mail-ID:
+            <input type="email" id="t2" />
+            <br><br>
+             Enter your password:
+            <input type="password" id="t3" />
+            <br><br>
+            <input type="submit" 
+                style="position: absolute; background-color: blue; color: white;" onclick="func()" />
+        </div>
+    </form>
+    
+    <script>
+        function func() {
+            var name = document.getElementById("t1").value;
+            var email = document.getElementById("t2").value;
+            var password=document.getElementById("t3").value;
+            document.write("Hello" + name+ "your mail id is:"+email+"password" + password);    
+        } 
+    </script>
+</body>
+
+</html>
