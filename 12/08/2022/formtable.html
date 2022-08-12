@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Payment section</title>
+    <style>
+        h2{
+            color: blue;
+        }
+          ul{
+    list-style:none;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    justify-content:center;
+    width:100%;
+  
+  }
+  ul li{
+    padding:1em 2em .8em 2em;
+    border:1px solid black;
+  
+  }
+    </style>
+   
+</head>
+<body>
+    <form action="#" id="formSubmission" method="get">
+        <h2>Student fee payment details</h2>
+        <span>RollNO</span>
+        <input type="number" placeholder="enter rollno" id="id" required><br><br>
+        <span>Name</span>
+        <input type="Name" placeholder="enter your Name" id="name" required><br><br>
+        <span>Date of Birth</span>
+        <input type="date" id="dob" required><br><br>
+        <label for="dept">Choose a Department:</label>
+         <select name="dept" id="dept">
+             <option value="select">Select</option>
+              <option value="E&I">E&I</option>
+              <option value="CSE">CSE</option>
+              <option value="CIVIL">Civil</option>
+              <option value="MECH">mechanical</option>
+        </select><br><br>
+        <span>Fee</span>
+        <input type="number" placeholder="enter amount" id="fee" required><br><br>
+        <span>CGPA</span>
+        <input type="number" placeholder="enter your cgpa" id="cgpa" required><br><br>
+        <span>Date of Joining</span>
+        <input type="date" id="doj" required><br><br>
+        <span>Pass out date</span>
+        <input type="date" id="date" required><br><br>
+        <span>Agree with Terms and Conditions</span>
+        <input type="checkbox" id="t1" required><br><br>
+        <button type="submit">Submit</button>    
+    
+  </form>
+  <h2>Student fee paid details</h2>
+ <ul id="data">
+       <li>Roll.no</li>
+      <li>Name</li>
+      <li>Date of birth</li>
+      <li>Department</li>
+      <li>Fee details</li>
+      <li>CGPA</li>
+      <li>Date of Joining</li>
+      <li>Pass out date</li>
+ </ul>
+ <script>
+    let form=document.getElementById("formSubmission");
+
+let table=document.getElementById('data');
+form.addEventListener("submit",(e)=>{
+  e.preventDefault();
+  submit();
+})
+
+
+const submit=()=>{
+    let id = document.getElementById("id").value;
+    let name = document.getElementById("name").value;
+    let dob= document.getElementById("dob").value;  
+    let fee=document.getElementById("fee").value;
+    let dept=document.getElementById("dept").value;
+    let cgpa = document.getElementById("cgpa").value;
+    let doj = document.getElementById("doj").value;
+    let date = document.getElementById("date").value;
+
+  let newArray = [id,name,dob,dept,fee,cgpa,doj,date];
+  newArray.forEach((item)=>{
+      var li = document.createElement("li");
+  var text = document.createTextNode(item);
+  li.appendChild(text);
+  table.appendChild(li);
+  })
+  form.reset(); 
+}
+ </script>
+</body>
+</html>
