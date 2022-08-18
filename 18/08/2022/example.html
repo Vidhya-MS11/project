@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<div ng-app="">
+    <h1>Please fill in the Form </h1>
+  <p>Name : <input type="text" ng-model="name" placeholder="type your name"></p>
+  <p>Roll No: <input type="number" ng-model="number" placeholder="type your roll no"></p>
+  <p>Date of joining: <input type="date" ng-model="date" ></p>
+  <p>select Gender: <input type="radio" ng-model="checked" value="female">Female<input type="radio" ng-model="checked" value="male">Male</p>
+  <p>I read the terms and condition<input type="checkbox" ng-model="check" value="true">yes/no </p>
+  <h2>Hello {{name}}</h2>
+  <h2>Your Roll.No is  {{number}}</h2>
+  <h2>DOJ is {{date}}</h2>
+  <h2>Gender: {{checked}}</h2>
+  <h2>Confirmation:{{check}}</h2>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</body>
+</html>
